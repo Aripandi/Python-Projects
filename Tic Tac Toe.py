@@ -46,3 +46,8 @@ def choose_first():
         return 'Player 2'
     else:
         return 'Player 1'
+    
+#create a funtion to check if any space is empty    
+def space_check(board, position):
+    
+    return board[position] == ' '
