@@ -51,3 +51,10 @@ def choose_first():
 def space_check(board, position):
     
     return board[position] == ' '
+
+#create a funtion to check whether a board is empty or not
+def full_board_check(board):
+    for i in range(1,10):
+        if space_check(board, i):
+            return False
+    return True
