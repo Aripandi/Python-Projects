@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jan 28 12:09:11 2021
+
+@author: Aripandi
+"""
+
+#python program for Tic Tac Toe game
+
 def display_board(board):
     
     print('   |   |')
@@ -25,8 +34,8 @@ def player_input():
     
 def place_marker(board, marker, position):
     board[position] = marker
-    
- #create a function to check the winnner by matching if the choices are same in respective index
+
+#create a function to check the winnner by matching if the choices are same in respective index
 def win_check(board,mark):
     
     return ((board[7] == mark and board[8] == mark and board[9] == mark) or # across the top
@@ -46,11 +55,11 @@ def choose_first():
         return 'Player 2'
     else:
         return 'Player 1'
-    
 #create a funtion to check if any space is empty    
 def space_check(board, position):
     
     return board[position] == ' '
+
 
 #create a funtion to check whether a board is empty or not
 def full_board_check(board):
@@ -60,12 +69,6 @@ def full_board_check(board):
     return True
 
 def player_choice(board):
-    position = 0
-    
-    while position not in [1,2,3,4,5,6,7,8,9] or not space_check(board, position):
-        position = int(input('Choose your next position: (1-9): '))
-        
-    return positiondef player_choice(board):
     position = 0
     
     while position not in [1,2,3,4,5,6,7,8,9] or not space_check(board, position):
@@ -136,3 +139,4 @@ while True:
 
     if not replay():
         break
+        
