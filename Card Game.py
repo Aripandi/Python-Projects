@@ -4,6 +4,7 @@
 #CARD CLASS
 #SUIT,RANK,VALUE
 
+import random
 
 suits  = ('Hearts', 'Diamonds', 'Spades', 'Clubs')
 rank = ('Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
