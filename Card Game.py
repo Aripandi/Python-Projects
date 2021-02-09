@@ -20,3 +20,8 @@ class card():
         
     def __str__(self):
         return self.rank + " of " +self.suits
+
+class Deck():
+    
+    def __init__(self):
+        self.all_cards = [ ]
