@@ -25,3 +25,9 @@ class Deck():
     
     def __init__(self):
         self.all_cards = [ ]
+        
+        for suit in suits:
+            for rank in ranks:
+                #CREATING CARD OBJECT
+                created_cards = card(suit,rank)
+                self.all_cards.append(created_cards)
