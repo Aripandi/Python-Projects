@@ -31,3 +31,6 @@ class Deck():
                 #CREATING CARD OBJECT
                 created_cards = card(suit,rank)
                 self.all_cards.append(created_cards)
+     def shuffle(self):
+        
+        random.shuffle(self.all_cards)
